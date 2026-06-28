@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix server-marketplace\" \"npm run dev --prefix client-marketplace\"",
+    "build": "npm run build --prefix client-marketplace",
+    "start": "cross-env NODE_ENV=production npm start --prefix server-marketplace"
+  },
+  "devDependencies": {
+    "concurrently": "^10.0.3"
+  },
+  "dependencies": {
+    "cross-env": "^10.1.0"
+  }
+}
