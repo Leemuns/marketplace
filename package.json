@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix server-marketplace\" \"npm run dev --prefix client-marketplace\"",
-    "build": "npm run build --prefix client-marketplace",
+    "build": "npm install --prefix client-marketplace && npm run build --prefix client-marketplace",
     "start": "cross-env NODE_ENV=production npm start --prefix server-marketplace"
   },
   "devDependencies": {

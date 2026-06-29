@@ -45,5 +45,6 @@
     "noEmit": true,
     "esModuleInterop": true,
     "allowImportingTsExtensions": true
-  }
+  },
+  "exclude": ["node_modules", "client-marketplace", "dist"]
 }
