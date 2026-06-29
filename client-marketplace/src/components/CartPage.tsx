@@ -1,7 +1,7 @@
 import { useCart, useCartQuantity } from "../stores/cartStore";
 import { DELIVERY_PRICES } from "../types";
 
-export default function Cart() {
+export default function CartPage() {
   const cart = useCart();
   const cartQuantity = useCartQuantity();
 
@@ -36,7 +36,7 @@ export default function Cart() {
       <div>
         <ol>
           {cart.map((e) => (
-            <li>
+            <li key={e.product.id}>
               {e.product.name}, {e.quantity}
             </li>
           ))}

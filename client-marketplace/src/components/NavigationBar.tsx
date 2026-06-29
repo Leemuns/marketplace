@@ -106,7 +106,14 @@ export default function SearchAppBar() {
               </Badge>
             </IconButton>
 
-            <IconButton size="large" edge="end" color="inherit">
+            <IconButton
+              size="large"
+              edge="end"
+              color="inherit"
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
               <AccountCircleIcon />
             </IconButton>
           </Box>

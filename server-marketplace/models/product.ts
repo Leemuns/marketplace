@@ -20,7 +20,7 @@ productSchema.set("toJSON", {
   transform: (_document, returnedObject) => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const { _id, __v, ...rest } = returnedObject;
-    return { id: _id, ...rest };
+    return { id: _id.toString(), ...rest };
   },
 });
 

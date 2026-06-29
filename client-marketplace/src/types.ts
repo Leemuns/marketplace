@@ -22,3 +22,20 @@ export interface CartItem {
   quantity: number;
   deliveryType: DeliveryType;
 }
+
+export interface Order {
+  items: CartItem[];
+  orderDate: string;
+}
+
+export interface UserCredentials {
+  username: string;
+  password: string;
+}
+
+export interface User {
+  id: string;
+  username: string;
+  passwordHash: string;
+  orders: Order[];
+}
