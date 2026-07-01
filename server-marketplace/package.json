@@ -3,8 +3,7 @@
   "scripts": {
     "tsc": "tsc",
     "dev": "concurrently \"tsc --watch\" \"node --watch index.ts\"",
-    "build": "npm run build --prefix client",
-    "start": "cross-env NODE_ENV=production npm start --prefix server",
+    "start": "cross-env NODE_ENV=production node index.ts",
     "lint": "eslint ."
   },
   "devDependencies": {
